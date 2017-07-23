@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactRouter from 'react-router-dom';
 import Nav from './Nav';
 import Roster from './Roster';
 import Schedule from './Schedule';
