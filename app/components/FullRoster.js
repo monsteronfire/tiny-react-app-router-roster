@@ -4,7 +4,17 @@ class FullRoster extends React.Component {
   render() {
     return (
       <div>
-        Full Roster
+        <ul>
+          {
+            PlayerAPI.all().map((p) => {
+              return (
+                <li key={p.number}>
+                  <Link to={`/roster`} />
+                </li>
+              )
+            });
+          }
+        </ul>
       </div>
     )
   }
